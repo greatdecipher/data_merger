@@ -10,7 +10,7 @@ def app_main():
 
     editor_emails = []
 
-    filename_combined_sheet = 'Consolidated_file'      #this will be generated with an '_' and timestamp...
+    filename_combined_sheet = 'Consolidated_brands'      #this will be generated with an '_' and timestamp...
 
     """Executions"""
     google_app_actions = GoogleAppsAuto(user_email, directory_link, editor_emails, filename_combined_sheet)

@@ -13,7 +13,7 @@ import itertools
 import time
 from config import SHEETS_KEY
 from googleapiclient.discovery import build
-from google.oauth2 import service_account
+from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime
 
 
@@ -25,7 +25,7 @@ class GoogleAppsAuto():
         # Google Drive API setup
         self.sheets_key = SHEETS_KEY
         self.SCOPES = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive','https://www.googleapis.com/auth/spreadsheets']
-        self.credentials = service_account.Credentials.from_json_keyfile_dict(self.sheets_key, self.SCOPES)
+        self.credentials = ServiceAccountCredentials.from_json_keyfile_dict(self.sheets_key, self.SCOPES)
         self.client = gspread.Client(auth=self.credentials)
         self.client.set_timeout(1000)
         self.credentials_file = 'your_credentials.json'
