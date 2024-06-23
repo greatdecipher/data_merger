@@ -7,6 +7,12 @@ This project is part of an ETL process for brand files in Locad platform. Initia
 You need a Google API Service account to be added as an editor in the drive folder.
 1. Service account Key inside the main/config.py
 
+Also note the dependencies needed, already at the **requirements.txt**:
+1. Gspread version 5.7.2
+2. Latest pandas
+3. google-api-python-client version 2.134.0
+4. oauth2client 4.1.3
+
 ## Installation Steps
 Follow these steps to set up and run the merger:
 
