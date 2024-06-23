@@ -6,7 +6,7 @@ def app_main():
     user_email = 'robinignaciosky70@gmail.com' # please put your email here.
 
     #test gdrive directory
-    directory_link = "https://drive.google.com/drive/folders/1obpzqT7VeD5vCUZJjqs8eNECkCibFh_6"
+    directory_link = "https://drive.google.com/drive/folders/13qVsuq9VrWNGzbceV2Y_EGidfxqOPkiI?usp=drive_link"
 
     editor_emails = []
 
